@@ -1,6 +1,6 @@
 # bilibili-album
 
-## Bilibili相册爬虫
+## Bilibili 相册爬虫
 
 ## 声明
 > 本项目所有图片内容均由 *bilibili* 提供, 获取与共享之行为或有侵犯 *bilibili* 权益的嫌疑, 若被告知需停止共享与使用, 本人会及时删除整个项目. 请您了解相关情况, 并遵守 *bilibili* 协议。
@@ -27,8 +27,7 @@ data 中还有一个 has_more 变量, 表示之后还有没有更多图片, 0表
 >> git clone https://github.com/LewisTian/bilibili-album.git
 >> cd bilibili-album
 >> pip install -r requirements.txt
->> subl up.txt
-# 将要爬取的 up 的 uid 都记录在上述 up.txt 中
+>> subl up.txt # 将要爬取的 up 的 uid 都记录在 up.txt 中
 >> python album.py
 
 ```
