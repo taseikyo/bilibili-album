@@ -67,7 +67,7 @@ urls = ['http://api.vc.bilibili.com/link_draw/v1/doc/detail?doc_id={}'.format(i)
 - next_offset
 初始为0, 之后的 next_offset 在返回的 Json 的 data 中给出了
 - has_more
-data 中还有一个 has_more 变量, 表示之后还有没有更多图片, 0表示已完
+1 表示之后还有没有更多图片, 0 表示已完
 
 ## 使用说明
 ### 注: 默认的下载函数是将所有链接打印出来, 若是要直接下载请删除对应注释
