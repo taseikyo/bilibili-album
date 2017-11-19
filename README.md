@@ -9,7 +9,7 @@
 
 先说第一个
 ## 爬取全站绘画区信息
-
+共得到 条数据
 ### 爬取过程
 进入 B 站 [绘画区](http://h.bilibili.com/d) , 随便找一个图, 点进去, 打开开发者工具
 ![album-1](https://github.com/LewisTian/bilibili-album/blob/master/images/album-1.png)
@@ -31,9 +31,8 @@ r = requests.get(url, headers = headers, timeout = 6).json()
             data['doc_id'],             # id
             data['view_count'],         # 浏览次数
             data['like_count'],         # 点赞
-            data['title'],              # 标题
-            data['upload_timestamp'],   # 上传时间
-            data['collect_count']       # 收藏数
+            data['collect_count'],       # 收藏数
+            data['upload_timestamp']   # 上传时间
         )
         with lock:
             result.append(album)
