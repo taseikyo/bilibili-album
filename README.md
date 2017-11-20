@@ -50,7 +50,9 @@ urls = ['http://api.vc.bilibili.com/link_draw/v1/doc/detail?doc_id={}'.format(i)
         executor.map(run, urls)
 ``` 
 ### 分析
-要想查看以下作品, 可以通过 `http://h.bilibili.com/` + `a_id` 的方式访问.
+- 要想查看以下作品, 可以通过 `http://h.bilibili.com/` + `a_id` 的方式访问.
+- 要想查看 up 主, 可以通过 `http://space.bilibili.com/` + `a_up` 的方式访问.
+
 #### 点赞(like)数前10作品
 ![album-3](https://github.com/LewisTian/bilibili-album/blob/master/images/album-3.png)
 
