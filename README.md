@@ -8,7 +8,9 @@
 - 根据 up 主 uid 爬取其相簿的图片
 
 ## 1. 爬取全站绘画区信息
-共得到 条数据
+共得到 **602171** 条数据
+
+![album-2](https://github.com/LewisTian/bilibili-album/blob/master/images/album-2.png)
 ### 爬取过程
 进入 B 站 [绘画区](http://h.bilibili.com/d) , 随便找一个图, 点进去, 打开开发者工具
 ![album-1](https://github.com/LewisTian/bilibili-album/blob/master/images/album-1.png)
@@ -48,7 +50,18 @@ urls = ['http://api.vc.bilibili.com/link_draw/v1/doc/detail?doc_id={}'.format(i)
         executor.map(run, urls)
 ``` 
 ### 分析
+要想查看以下作品, 可以通过 `http://h.bilibili.com/` + `a_id` 的方式访问.
+#### 点赞(like)数前10作品
+![album-3](https://github.com/LewisTian/bilibili-album/blob/master/images/album-3.png)
 
+#### 浏览(view)数前10作品
+![album-4](https://github.com/LewisTian/bilibili-album/blob/master/images/album-4.png)
+
+#### 收藏(collect)数前10作品
+![album-5](https://github.com/LewisTian/bilibili-album/blob/master/images/album-5.png)
+
+#### 作品数前10的 up 主
+![album-6](https://github.com/LewisTian/bilibili-album/blob/master/images/album-6.png)
 
 ## 2. 根据 up 主 uid 爬取相簿图片
 ### 截图
