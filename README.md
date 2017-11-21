@@ -45,7 +45,7 @@ r = requests.get(url, headers = headers, timeout = 6).json()
 #### 多线程
 ```
 urls = ['http://api.vc.bilibili.com/link_draw/v1/doc/detail?doc_id={}'.format(i)
-            for i in range(1000, 1000000)]
+            for i in range(0, 1000000)]
     with futures.ThreadPoolExecutor(32) as executor:
         executor.map(run, urls)
 ``` 
